@@ -1,9 +1,18 @@
-#pos-popup .box.popup-contents table tr:nth-child(1) > th:nth-child(5) {display: none !important;}
-#pos-popup .box.popup-contents table tr:nth-child(1) > td:nth-child(6) {display: none !important;}
-#pos-popup .box.popup-contents table tr:nth-child(1) > td:nth-child(4) {display: none !important;}
-#pos-popup .box.popup-contents table tr:nth-child(1) > td:nth-child(3) {display: none !important;}
-#pos-popup .box.popup-contents table tr:nth-child(2) {display: none !important;}
-#pos-popup .box.popup-contents table tr:nth-child(3) {display: none !important;}
+
+
+#pos-popup > article > table > tbody > tr:nth-child(1) > th:nth-child(5) {display: none;}
+#pos-popup > article > table > tbody > tr:nth-child(1) > td:nth-child(6) {display: none;}
+#pos-popup > article > table > tbody > tr:nth-child(1) > th:nth-child(4) {display: none;}
+#pos-popup > article > table > tbody > tr:nth-child(1) > th:nth-child(3) {display: none;}
+#pos-popup > article > table > tbody > tr:nth-child(2) {display: none;}
+#pos-popup > article > table > tbody > tr:nth-child(3) {display: none;}
+
+body.mobile #pos-popup .box.popup-contents table tr:nth-child(1) > th:nth-child(5) {display: none;}
+body.mobile #pos-popup .box.popup-contents table tr:nth-child(1) > td:nth-child(6) {display: none;}
+body.mobile #pos-popup .box.popup-contents table tr:nth-child(1) > td:nth-child(4) {display: none;}
+body.mobile #pos-popup .box.popup-contents table tr:nth-child(1) > td:nth-child(3) {display: none;}
+body.mobile #pos-popup .box.popup-contents table tr:nth-child(2) {display: none;}
+body.mobile #pos-popup .box.popup-contents table tr:nth-child(3) {display: none;}
 
 body.mobile #page-sidebar {
     background-image: url('https://phpubbucket1.s3.amazonaws.com/KornitX.png');
@@ -40,4 +49,17 @@ body.mobile .popup .popup-contents .inner > div:nth-child(2) {
 body.mobile .gallery-image {
     width: 30%;
     height: auto;
+}
+
+#a2c-container {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    #a2c-container {
+        display: block;
+    }
+    #pos-popup .box.popup-contents table tr:nth-child(1) > td:nth-child(4) {
+        display: none;
+    }
 }
